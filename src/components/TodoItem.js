@@ -14,3 +14,15 @@ const Remove = styled.div`
   }
   display: none;
 `;
+
+const TodoItemBlock = styled.div`
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  &:hover {
+    ${Remove} {
+      display: initial;
+    }
+  }
+`;
