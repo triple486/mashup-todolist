@@ -11,5 +11,8 @@ const CircleButton = styled.button`
     background: #20c997;
   }
 
-  
+  z-index: 5;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
 `;
