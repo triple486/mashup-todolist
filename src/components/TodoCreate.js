@@ -22,4 +22,6 @@ const CircleButton = styled.button`
   position: absolute;
   left: 50%;
   bottom: 0px;
+  transform: translate(-50%, 50%);
+  color: white;
 `;
