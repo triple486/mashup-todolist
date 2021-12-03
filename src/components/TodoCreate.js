@@ -26,4 +26,6 @@ const CircleButton = styled.button`
   color: white;
   border-radius: 50%;
   border: none;
+  outline: none;
+  display: flex;
 `;
