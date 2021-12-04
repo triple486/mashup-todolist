@@ -30,4 +30,18 @@ const CircleButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: 0.125s all ease-in;
+  ${props =>
+    props.open &&
+    css`
+      background: #ff6b6b;
+      &:hover {
+        background: #ff8787;
+      }
+      &:active {
+        background: #fa5252;
+      }
+      transform: translate(-50%, 50%) rotate(45deg);
+    `}
 `;
