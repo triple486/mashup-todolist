@@ -45,3 +45,10 @@ const CircleButton = styled.button`
       transform: translate(-50%, 50%) rotate(45deg);
     `}
 `;
+
+const InsertFormPositioner = styled.div`
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+`;
