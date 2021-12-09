@@ -59,5 +59,8 @@ const InsertForm = styled.form`
   padding-top: 32px;
   padding-right: 32px;
   padding-bottom: 72px;
-  
+
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-top: 1px solid #e9ecef;
 `;
