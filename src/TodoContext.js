@@ -11,4 +11,9 @@ const initialTodos = [
       text: '컴포넌트 스타일링하기',
       done: true
     },
+    {
+      id: 3,
+      text: 'Context 만들기',
+      done: false
+    },
   ];
