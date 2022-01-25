@@ -27,6 +27,10 @@ const initialTodos = [
     switch (action.type) {
       case 'CREATE':
         return state.concat(action.todo);
+      case 'TOGGLE':
+        return state.map(todo =>
+          todo.id === action.id ? { ...todo, done: !todo.done } : todo
+        );
       
     }
   }
