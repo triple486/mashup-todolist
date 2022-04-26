@@ -33,5 +33,7 @@ const initialTodos = [
         );
       case 'REMOVE':
         return state.filter(todo => todo.id !== action.id);
+      default:
+        throw new Error(`Unhandled action type: ${action.type}`);
     }
   }
