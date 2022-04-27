@@ -37,3 +37,8 @@ const initialTodos = [
         throw new Error(`Unhandled action type: ${action.type}`);
     }
   }
+
+  export function TodoProvider({ children }) {
+    const [state, dispatch] = useReducer(todoReducer, initialTodos);
+    return children;
+  }
