@@ -43,5 +43,8 @@ const initialTodos = [
 
   export function TodoProvider({ children }) {
     const [state, dispatch] = useReducer(todoReducer, initialTodos);
-    return children;
+    return (
+      <TodoStateContext.Provider value={state}>
+      </TodoStateContext.Provider>
+    );
   }
