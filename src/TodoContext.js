@@ -51,3 +51,7 @@ const initialTodos = [
       </TodoStateContext.Provider>
     );
   }
+
+  export function useTodoState() {
+    return useContext(TodoStateContext);
+  }
