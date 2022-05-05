@@ -55,3 +55,7 @@ const initialTodos = [
   export function useTodoState() {
     return useContext(TodoStateContext);
   }
+
+  export function useTodoDispatch() {
+    return useContext(TodoDispatchContext);
+  }
