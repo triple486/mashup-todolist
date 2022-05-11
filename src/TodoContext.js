@@ -58,6 +58,7 @@ const initialTodos = [
   }
 
   export function useTodoState() {
+    const context = useContext(TodoStateContext);
     return useContext(TodoStateContext);
   }
 
