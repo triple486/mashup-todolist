@@ -59,7 +59,10 @@ const initialTodos = [
 
   export function useTodoState() {
     const context = useContext(TodoStateContext);
-    return useContext(TodoStateContext);
+    if (!context) {
+      throw new Error('Cannot find TodoProvider');
+    }
+    return context;
   }
 
   export function useTodoDispatch() {
