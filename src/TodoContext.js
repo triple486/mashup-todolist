@@ -66,6 +66,7 @@ const initialTodos = [
   }
 
   export function useTodoDispatch() {
+    const context = useContext(TodoDispatchContext);
     return useContext(TodoDispatchContext);
   }
 
