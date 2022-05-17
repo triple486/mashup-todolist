@@ -74,5 +74,6 @@ const initialTodos = [
   }
 
   export function useTodoNextId() {
+    const context = useContext(TodoNextIdContext);
     return useContext(TodoNextIdContext);
   }
