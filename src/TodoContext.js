@@ -75,5 +75,8 @@ const initialTodos = [
 
   export function useTodoNextId() {
     const context = useContext(TodoNextIdContext);
-    return useContext(TodoNextIdContext);
+    if (!context) {
+      throw new Error('Cannot find TodoProvider');
+    }
+    return context;
   }
