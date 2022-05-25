@@ -30,6 +30,8 @@ function TodoHead() {
   const todos = useTodoState();
   const undoneTasks = todos.filter(todo => !todo.done);
 
+  const today = new Date();
+
   return (
     <TodoHeadBlock>
       <h1>2019년 7월 10일</h1>
