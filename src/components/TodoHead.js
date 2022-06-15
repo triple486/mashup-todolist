@@ -37,6 +37,8 @@ function TodoHead() {
     day: "numeric",
   });
 
+  const dayName = today.toLocaleDateString("ko-KR", { weekday: "long" });
+
   return (
     <TodoHeadBlock>
       <h1>2019년 7월 10일</h1>
