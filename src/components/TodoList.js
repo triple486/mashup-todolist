@@ -15,8 +15,8 @@ function TodoList() {
 
   return (
     <TodoListBlock>
-      {todos.map(todo => (
-        
+      {todos.map((todo) => (
+        <TodoItem />
       ))}
     </TodoListBlock>
   );
