@@ -16,7 +16,7 @@ function TodoList() {
   return (
     <TodoListBlock>
       {todos.map((todo) => (
-        <TodoItem />
+        <TodoItem key={todo.id} />
       ))}
     </TodoListBlock>
   );
